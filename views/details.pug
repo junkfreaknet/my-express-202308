@@ -1,0 +1,11 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    block content
+      ul 
+        each detail in details.length ? details : [there is no list.]
+          li=detail
+
