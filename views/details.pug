@@ -5,7 +5,12 @@ html
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
     block content
+      h1=title
       ul 
-        each detail in details.length ? details : [there is no list.]
-          li=detail
+        each detail in details
+          //li=detail.FirstName
+          //li=detail.LastName 
+          //li=detail.FullName
+          li=detail.syu_ymd
+
 
