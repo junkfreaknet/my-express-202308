@@ -30,6 +30,7 @@ exports.details_list=asyncHandler(async(req,res,next)=>{
         //console.log(rows[0]);
         //console.log(rows[0].syu_ymd);
         result=await cnnctn.execute('select distinct syu_ymd from select_locale_child_202212011001_cp_csv');
+        console.log(rows[0]);
         console.log(rows[0].syu_ymd);
         allDetails=result;
     }
